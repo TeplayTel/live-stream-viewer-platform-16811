@@ -44,3 +44,5 @@ websockets==15.0.1
 
 # --- Added for SQLAlchemy/ORM support ---
 SQLAlchemy>=2.0.0
+passlib[bcrypt]==1.7.4
+PyJWT==2.8.0
