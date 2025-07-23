@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.auth import router as auth_router
 from src.api.stats import router as stats_router
+from src.api.metrics import router as metrics_router
 
 app = FastAPI(
     title="Live Stream Platform Backend",
@@ -22,6 +23,8 @@ app.add_middleware(
 app.include_router(auth_router)
 # Register statistics API router
 app.include_router(stats_router)
+# Register metrics API router
+app.include_router(metrics_router)
 
 @app.get("/", summary="Health Check", tags=["Health"])
 def health_check():
