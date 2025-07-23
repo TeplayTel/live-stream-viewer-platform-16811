@@ -1,0 +1,39 @@
+# Ignore Python cache and build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+# Ignore environment and secrets
+.env
+.env.*
+# Ignore virtualenvs
+venv/
+ENV/
+# Ignore OS and tool generated files
+.DS_Store
+*.swp
+*.swo
+# Ignore containers and dist output
+node_modules/
+build/
+dist/
+.eggs/
+# Ignore coverage, logs and test output
+.coverage
+coverage.*
+htmlcov/
+*.log
+*.sqlite3
+# Ignore git
+.git
+.gitignore
+
+# Ignore lock/status/build files
+post_process_status.lock
+
+# Ignore project files
+*.db
+
+# Ignore frontend artifacts (if copied wrongly)
+live_stream_frontend/

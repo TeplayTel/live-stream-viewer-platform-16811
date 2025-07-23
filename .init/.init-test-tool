@@ -1,0 +1,4 @@
+{
+    "command": "pytest",
+    "working_directory": "/home/kavia/workspace/code-generation/live-stream-viewer-platform-16811/live_stream_backend"
+}
