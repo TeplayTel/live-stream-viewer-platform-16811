@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.auth import router as auth_router
+from src.api.stats import router as stats_router
 
 app = FastAPI(
     title="Live Stream Platform Backend",
@@ -19,6 +20,8 @@ app.add_middleware(
 
 # Register authentication API router
 app.include_router(auth_router)
+# Register statistics API router
+app.include_router(stats_router)
 
 @app.get("/", summary="Health Check", tags=["Health"])
 def health_check():
